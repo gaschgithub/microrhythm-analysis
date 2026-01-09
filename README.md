@@ -25,10 +25,11 @@ microrhythm-analysis/
 
 ## Methods (overview)
 
-- MIDI parsing and onset extraction
-- IOI computation in milliseconds
-- Normalization relative to tempo (BPM)
-- Export of results for statistical analysis
+- Perceptual identification and manual encoding of rhythmic events as MIDI sequences (16-beat excerpts).
+- MIDI parsing and extraction of onset times.
+- Computation of inter-onset intervals (IOI) in milliseconds.
+- Normalization of timing deviations relative to tempo (BPM).
+- Export of results for statistical and comparative analysis.
 
 ## Technologies
 
