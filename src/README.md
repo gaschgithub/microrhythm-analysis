@@ -5,7 +5,7 @@ This module provides utilities for extracting inter-onset intervals (IOI) from M
 ### Functions
 
 - `process_midi_file`: Extracts onset times and inter-onset intervals from a MIDI file.
-- `determine_subdivisions_per_beat`: Computes the number of rhythmic subdivisions per beat.
+- `determine_subdivisions_per_beat`: Computes the number of rhythmic subdivisions per beat (3, 4, both).
 - `export_ioi_to_excel`: Exports IOI data to an Excel file for further analysis.
 
 ### Dependencies
