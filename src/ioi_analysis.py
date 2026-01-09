@@ -1,17 +1,24 @@
 """
 Microrhythm IOI analysis utilities.
 
-This module provides functions to extract inter-onset intervals (IOI)
-from MIDI files and organize microrhythmic timing data for analysis.
+This module extracts inter-onset intervals (IOI) from manually encoded
+MIDI files and organizes microrhythmic timing data for further analysis.
+Beat-level subdivisions are inferred automatically from onset distribution.
 """
 
 import mido
 import pandas as pd
 
 
+# ---------- CONFIGURATION ----------
+NUM_BEATS = 16          # Default analysis length (16 beats = 4 bars of 4/4)
+PRECISION_TOLERANCE = 1e-6
+
+
+# ---------- MIDI PROCESSING ----------
 def process_midi_file(midi_file_path, tempo_bpm):
     """
-    Process a MIDI file to compute onset times and inter-onset intervals (IOI).
+    Extract onset times and inter-onset intervals (IOI) from a MIDI file.
 
     Parameters
     ----------
@@ -29,7 +36,7 @@ def process_midi_file(midi_file_path, tempo_bpm):
     """
     midi = mido.MidiFile(midi_file_path)
     beat_duration_ms = (60 / tempo_bpm) * 1000
-    total_duration_ms = beat_duration_ms * 16  # 16 beats (4 bars of 4/4)
+    total_duration_ms = beat_duration_ms * NUM_BEATS
 
     onsets = []
     current_time = 0.0
@@ -52,9 +59,14 @@ def process_midi_file(midi_file_path, tempo_bpm):
     return iois, onsets
 
 
-def determine_subdivisions_per_beat(onsets, tempo_bpm, num_beats=16):
+# ---------- SUBDIVISION DETECTION ----------
+def determine_subdivisions_per_beat(onsets, tempo_bpm, num_beats=NUM_BEATS):
     """
-    Determine the number of rhythmic subdivisions per beat (3, 4, both).
+    Infer the number of rhythmic subdivisions per beat based on onset density.
+
+    This function allows beats to contain varying numbers of subdivisions
+    (e.g., 3, 4, or alternating patterns), which is particularly relevant
+    for genres such as Brazilian funk.
 
     Parameters
     ----------
@@ -68,21 +80,19 @@ def determine_subdivisions_per_beat(onsets, tempo_bpm, num_beats=16):
     Returns
     -------
     subdivisions : list of int
-        Number of onsets per beat.
+        Number of detected subdivisions per beat.
     """
     beat_duration_ms = (60 / tempo_bpm) * 1000
-    precision_tolerance = 1e-6
-
     subdivisions = []
 
     for beat_index in range(num_beats):
         beat_start = beat_index * beat_duration_ms
-        beat_end = (beat_index + 1) * beat_duration_ms - precision_tolerance
+        beat_end = (beat_index + 1) * beat_duration_ms - PRECISION_TOLERANCE
 
         onsets_in_beat = [
             onset for onset in onsets
             if beat_start <= onset < beat_end
-            or abs(onset - beat_start) < precision_tolerance
+            or abs(onset - beat_start) < PRECISION_TOLERANCE
         ]
 
         subdivisions.append(len(onsets_in_beat))
@@ -90,9 +100,13 @@ def determine_subdivisions_per_beat(onsets, tempo_bpm, num_beats=16):
     return subdivisions
 
 
+# ---------- EXCEL EXPORT ----------
 def export_ioi_to_excel(iois, subdivisions, tempo_bpm, output_path):
     """
-    Export IOI data to an Excel file with dynamic subdivision handling.
+    Export IOI data to an Excel file with adaptive beat subdivision handling.
+
+    Each row corresponds to one beat. Beats with fewer than four subdivisions
+    are zero-padded with empty cells to ensure a consistent table structure.
 
     Parameters
     ----------
