@@ -10,7 +10,13 @@ duration at a given tempo.
 
 ## Microrhythm Analysis in Latin Popular Music
 
-This repository contains analysis tools and data developed for my undergraduate thesis: "Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor". The project focuses on the study of timing deviations at the sixteenth-note level using symbolic representations (MIDI) and inter-onset interval (IOI) analysis to compare rhythmic behaviors across genres.
+This repository contains analysis tools and data developed for my undergraduate thesis: "Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor". The project focuses on the study of timing deviations at the sixteenth-note level using symbolic representations (MIDI) and inter-onset interval (IOI) analysis to compare rhythmic behaviors across the following latin genres:
+
+- Salsa
+- Cumbia
+- Joesón (colombian Salsa variation by artist Joe Arroyo)
+- Bossa Nova
+- Brazilian Funk
 
 ## Project structure
 
