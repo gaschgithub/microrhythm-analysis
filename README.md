@@ -12,7 +12,6 @@ duration at a given tempo.
 
 This repository contains analysis tools and data developed for my undergraduate thesis: "Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor". The project focuses on the study of timing deviations at the sixteenth-note level using symbolic representations (MIDI) and inter-onset interval (IOI) analysis to compare rhythmic behaviors across genres.
 
-
 ## Project structure
 
 ```
@@ -30,6 +29,10 @@ microrhythm-analysis/
 - Computation of inter-onset intervals (IOI) in milliseconds.
 - Normalization of timing deviations relative to tempo (BPM).
 - Export of results for statistical and comparative analysis.
+
+### Genre-specific considerations
+
+While most analyzed genres exhibit a consistent four-part subdivision of the beat, Brazilian funk excerpts may alternate between three and four subdivisions. The analysis pipeline accommodates this variability by adapting the number of subdivisions used for statistical analysis and visualization.
 
 ## Technologies
 
