@@ -8,6 +8,11 @@ The project focuses on measuring inter-onset intervals (IOIs) in short rhythmic
 fragments and expressing timing deviations as percentages relative to a nominal beat
 duration at a given tempo.
 
+## Microrhythm Analysis in Latin Popular Music
+
+This repository contains analysis tools and data developed for my undergraduate thesis: "Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor". The project focuses on the study of timing deviations at the sixteenth-note level using symbolic representations (MIDI) and inter-onset interval (IOI) analysis to compare rhythmic behaviors across genres.
+
+
 ## Project structure
 
 ```
