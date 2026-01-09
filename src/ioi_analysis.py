@@ -54,7 +54,7 @@ def process_midi_file(midi_file_path, tempo_bpm):
 
 def determine_subdivisions_per_beat(onsets, tempo_bpm, num_beats=16):
     """
-    Determine the number of rhythmic subdivisions per beat.
+    Determine the number of rhythmic subdivisions per beat (3, 4, both).
 
     Parameters
     ----------
