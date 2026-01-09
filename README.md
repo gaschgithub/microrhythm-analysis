@@ -10,11 +10,13 @@ duration at a given tempo.
 
 ## Project structure
 
+```
 microrhythm-analysis/
 ├── src/ # Analysis scripts
 ├── data/ # MIDI files and processed data
 ├── notebooks/ # Exploratory analysis and visualizations
 ├── figures/ # Plots and exported figures
+```
 
 ## Methods (overview)
 
