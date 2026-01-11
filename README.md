@@ -193,3 +193,36 @@ microrhythm-analysis/
 This repository represents the **final research state** of the computational analysis
 conducted for the undergraduate thesis. It is not intended as a continuously evolving
 software project, but as a documented research artifact.
+
+**Research snapshot:** `v1.0-research-snapshot`
+
+---
+
+## How to cite
+
+If you use this repository, its data, or its figures for academic or artistic research,
+please cite the undergraduate thesis:
+
+### Thesis
+
+```bibtex
+@thesis{GallegosMicrorhythms2024,
+  author  = {Gallegos, Pablo},
+  title   = {Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor},
+  school  = {Universidad Nacional Autónoma de México (UNAM)},
+  year    = {2024},
+  url     = {https://ru.dgb.unam.mx/items/1fdea9ae-5813-4caf-b2e7-4161eaeaec6e}
+}
+
+If referencing the artistic outcome of the research (compositional application of
+microrhythmic prototypes), please cite the album:
+
+@music{GaschHyperestesia2024,
+  artist = {Gasch},
+  title  = {Hyperestesia},
+  year   = {2024},
+  url    = {https://orcd.co/hyperstesiagasch},
+  note   = {Album derived from microrhythmic analysis of Latin popular music}
+}
+
+For informal references, please link directly to this repository and the thesis record.
