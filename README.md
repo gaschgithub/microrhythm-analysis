@@ -213,6 +213,7 @@ please cite the undergraduate thesis:
   year    = {2024},
   url     = {https://ru.dgb.unam.mx/items/1fdea9ae-5813-4caf-b2e7-4161eaeaec6e}
 }
+```
 
 If referencing the artistic outcome of the research (compositional application of
 microrhythmic prototypes), please cite the album:
@@ -224,5 +225,6 @@ microrhythmic prototypes), please cite the album:
   url    = {https://orcd.co/hyperstesiagasch},
   note   = {Album derived from microrhythmic analysis of Latin popular music}
 }
+```
 
 For informal references, please link directly to this repository and the thesis record.
