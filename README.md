@@ -201,7 +201,7 @@ software project, but as a documented research artifact.
 ## How to cite
 
 If you use this repository, its data, or its figures for academic or artistic research,
-please cite the undergraduate thesis:
+please cite the thesis:
 
 ### Thesis
 
