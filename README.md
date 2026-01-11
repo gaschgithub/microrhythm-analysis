@@ -60,8 +60,8 @@ The project addresses the following research questions:
   Latin popular music genres?
 - Do these deviations form **stable, genre-specific profiles** across multiple musical
   excerpts?
-- Can symbolic microrhythmic measurements reveal stylistic proximity or distance
-  between genres that share historical or cultural roots?
+- Can symbolic microrhythmic measurements support the construction of **rhythmic
+  prototypes** per genre?
 
 ---
 
@@ -138,8 +138,7 @@ Cross-genre comparison of average subdivision durations suggests the emergence o
   subdivision alternation.
 
 These results support the hypothesis that microrhythmic duration patterns can reflect
-tacit stylistic consensus across genres and can be formalized into rhythmic prototypes
-usable in musical creation.
+tacit stylistic consensus across genres and can be formalized into rhythmic prototypes.
 
 ---
 
