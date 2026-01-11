@@ -63,8 +63,8 @@ The project addresses the following research questions:
   Latin popular music genres?
 - Do these deviations form **stable, genre-specific profiles** across multiple musical
   excerpts?
-- Can symbolic microrhythmic measurements support the construction of **rhythmic
-  prototypes** suitable for musical synthesis and composition?
+- Can symbolic microrhythmic measurements reveal stylistic proximity or distance
+  between genres that share historical or cultural roots?
 
 The study adopts a **comparative, subdivision-level perspective**, focusing on short
 rhythmic fragments in order to preserve perceptual grounding while enabling precise
