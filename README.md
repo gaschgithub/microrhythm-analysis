@@ -11,8 +11,8 @@ perceptually identified rhythmic events. Timing deviations are quantified throug
 inter-onset interval (IOI) analysis and expressed as percentages relative to a nominal
 beat duration at a fixed tempo.
 
-Beyond analytical goals, this research was conducted as part of a **practice-based
-artistic process**: the computational findings informed the composition and production
+This research was conducted as part of a **practice-based artistic process**: 
+the computational findings informed the composition and production
 of an original music album released under my artistic project **Gasch**.
 
 This repository is conceived as a **research system**, prioritizing methodological
