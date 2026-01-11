@@ -34,8 +34,7 @@ used in the album, which explores stylistic “sabor” through the synthesis of
 
 ## Research motivation and hypothesis
 
-This research originates from an **artistic motivation**: as a musician, I sought to
-compose music inspired by Latin popular genres **without relying on extensive prior knowledge**, instead grounding compositional decisions in
+As a musician, I sought to compose music inspired by Latin popular genres **without relying on extensive prior knowledge**, instead grounding compositional decisions in
 measured rhythmic behavior.
 
 The central hypothesis of the investigation is:
