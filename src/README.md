@@ -23,6 +23,9 @@ Plots the duration of each subdivision across the 16 analyzed beats of a single 
 based on data extracted from the aggregated Excel dataset.
 The number of subdivisions per beat (3 or 4) is specified explicitly by the user.
 
+### `excel_genre_comparison.py`
+Cross-genre comparison of average sixteenth-note (four-subdivision) durations. Generates a three-dimensional visualization to compare microrhythmic profiles across selectable 2-5 genres.
+
 ## Dependencies
 
 - Python 3.9+
