@@ -15,7 +15,7 @@ The computational findings informed the composition and production
 of an original music album released under my artistic project **Gasch**.
 
 This repository is conceived as a **research system**, prioritizing methodological
-clarity, inspectability, and reproducibility over automation or large-scale processing.
+clarity and reproducibility over automation or large-scale processing.
 
 ---
 
@@ -27,28 +27,26 @@ clarity, inspectability, and reproducibility over automation or large-scale proc
 - 🎧 **Resulting album (Gasch – _Hyperestesia_):**  
   https://orcd.co/hyperstesiagasch
 
-The analytical work documented here directly informed the rhythmic design strategies
-used in the album, which explores stylistic “sabor” through the synthesis and
-reinterpretation of rhythmic prototypes derived from the studied genres.
+The analytical work documented here informed the rhythmic design strategies
+used in the album, which explores stylistic “sabor” through the synthesis of rhythmic prototypes from the studied genres.
 
 ---
 
 ## Research motivation and hypothesis
 
 This research originates from an **artistic motivation**: as a musician, I sought to
-compose music inspired by Latin popular genres **without relying on extensive prior
-stylistic or idiomatic knowledge**, instead grounding compositional decisions in
+compose music inspired by Latin popular genres **without relying on extensive prior knowledge**, instead grounding compositional decisions in
 measured rhythmic behavior.
 
 The central hypothesis of the investigation is:
 
 > The “sabor” of the musical genres salsa, cumbia, joesón, bossa nova, and
-> Brazilian funk can be synthesized into **isoperiodic rhythmic pattern prototypes**
+> Brazilian funk can be synthesized into **repeating rhythmic pattern prototypes**
 > encoding genre-specific characteristics in **accentuation, articulation, and
 > microtiming of sixteenth notes**, within a tempo range (BPM) derived from the studied
 > corpus.
 
-Within this framework, microrhythm is understood not as expressive deviation or error,
+Here, microrhythm is presented not as expressive deviation or error,
 but as a **structural carrier of stylistic information** that can be analyzed,
 formalized, and re-applied in creative contexts.
 
@@ -65,10 +63,6 @@ The project addresses the following research questions:
 - Can symbolic microrhythmic measurements reveal stylistic proximity or distance
   between genres that share historical or cultural roots?
 
-The study adopts a **comparative, subdivision-level perspective**, focusing on short
-rhythmic fragments in order to preserve perceptual grounding while enabling precise
-temporal measurement.
-
 ---
 
 ## Corpus and genres
@@ -81,20 +75,20 @@ are included in the dataset published in this repository:
 - Cumbia  
 - Joesón (Colombian salsa style associated with Joe Arroyo)  
 - Bossa Nova  
-- Brazilian Funk  
+- Brazilian Funk
+  
+A complete list of analyzed excerpts is provided in `data/corpus.md`.
 
 All rhythmic events were **identified perceptually** and encoded manually prior to
 analysis. No automatic onset detection was used.
 
-A complete list of analyzed excerpts is provided in `data/corpus.md`.
-
 > **Note:** While the written thesis discusses a broader stylistic context, this
-> repository contains the finalized microrhythmic dataset used for quantitative
+> repository contains the finalized microrhythmic dataset (MIDI templates) used for quantitative
 > analysis and figure generation.
 
 ---
 
-## Methodological overview
+## Method overview
 
 The analysis pipeline implemented in this repository follows these steps:
 
@@ -119,7 +113,7 @@ Most analyzed genres exhibit a consistent **four-part subdivision of the beat**
 between **three- and four-part subdivisions**, sometimes within the same musical
 fragment.
 
-This variability is handled explicitly:
+This variability is handled as follows:
 
 - Subdivision structure is **automatically inferred** during IOI extraction.
 - Statistical analysis and visualization scripts require the user to specify whether
@@ -137,7 +131,7 @@ Cross-genre comparison of average subdivision durations suggests the emergence o
 **stylistic clusters**:
 
 - **Salsa and Joesón** exhibit the closest microrhythmic similarity, consistent with
-  their shared derivation from son-based rhythmic organization.
+  their shared derivation from son-based rhythms.
 - **Cumbia** appears closer to Salsa/Joesón than to Brazilian genres, plausibly
   reflecting Caribbean rhythmic influence and shared approaches to off-beat timing.
 - **Bossa Nova and Brazilian Funk** form a more distant group relative to the above,
@@ -169,7 +163,7 @@ microrhythm-analysis/
 - `ioi_analysis.py`  
   Extraction of onset times and inter-onset intervals (IOIs) from manually encoded MIDI
   files. Beat-level subdivisions are inferred automatically from onset distributions.
-  Results are exported to Excel for subsequent analysis.
+  Results are exported to Excel for later analysis.
 
 - `excel_analysis_std.py`  
   Statistical analysis of microrhythmic duration data exported to Excel. Computes mean
@@ -182,7 +176,7 @@ microrhythm-analysis/
 
 - `excel_genre_comparison.py`  
   Cross-genre comparison of average sixteenth-note (four-subdivision) durations.
-  Generates a three-dimensional visualization used in the thesis conclusion to compare
+  Generates a three-dimensional visualization to compare
   microrhythmic profiles across genres.
 
 ---
@@ -214,5 +208,4 @@ a practice-based research paradigm, where computational tools support artistic i
 
 This repository represents the **final research state** of the computational analysis
 conducted for the undergraduate thesis. It is not intended as a continuously evolving
-software project, but as a documented, inspectable research artifact suitable for
-academic and artistic evaluation.
+software project, but as a documented research artifact.
