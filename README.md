@@ -28,7 +28,7 @@ clarity and reproducibility over automation or large-scale processing.
   https://orcd.co/hyperstesiagasch
 
 The analytical work documented here informed the rhythmic design strategies
-used in the album, which explores stylistic “sabor” through the synthesis of rhythmic prototypes from the studied genres.
+used in the album, which explores stylistic “sabor” through the synthesis of rhythmic prototypes from the studied genres. This flow between **analysis and creation** situates the project within a practice-based research paradigm, where computational tools support artistic inquiry.
 
 ---
 
@@ -176,19 +176,6 @@ microrhythm-analysis/
   Cross-genre comparison of average sixteenth-note (four-subdivision) durations.
   Generates a three-dimensional visualization to compare
   microrhythmic profiles across genres.
-
----
-
-## Artistic application
-
-The analytical results obtained through this project were used as **compositional
-constraints and design guides** in the creation of an original album. Rather than
-reproducing existing genres, the album explores **stylized rhythmic prototypes**
-derived from microrhythmic measurements, translating analytical findings back into
-musical practice.
-
-This bidirectional flow between **analysis and creation** situates the project within
-a practice-based research paradigm, where computational tools support artistic inquiry.
 
 ---
 
