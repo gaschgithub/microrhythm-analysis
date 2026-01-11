@@ -216,7 +216,7 @@ please cite the thesis:
 ```
 
 If referencing the artistic outcome of the research (compositional application of
-microrhythmic prototypes), please cite the album:
+microrhythmic prototypes), please cite the **album**:
 
 ```bibtex
 @music{GaschHyperestesia2024,
