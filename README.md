@@ -43,7 +43,7 @@ measured rhythmic behavior.
 
 The central hypothesis of the investigation is:
 
-> The “sabor” of the musical genres reggaetón, salsa, cumbia, joesón, bossa nova, and
+> The “sabor” of the musical genres salsa, cumbia, joesón, bossa nova, and
 > Brazilian funk can be synthesized into **isoperiodic rhythmic pattern prototypes**
 > encoding genre-specific characteristics in **accentuation, articulation, and
 > microtiming of sixteenth notes**, within a tempo range (BPM) derived from the studied
