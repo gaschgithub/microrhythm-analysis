@@ -6,30 +6,65 @@ undergraduate thesis in Music and Artistic Technology (UNAM):
 **_Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor_**
 
 The project investigates **systematic microrhythmic timing deviations** in selected
-Latin popular music genres, using **symbolic representations (MIDI)** derived from
+Latin popular music genres using **symbolic representations (MIDI)** derived from
 perceptually identified rhythmic events. Timing deviations are quantified through
 inter-onset interval (IOI) analysis and expressed as percentages relative to a nominal
 beat duration at a fixed tempo.
+
+Beyond analytical goals, this research was conducted as part of a **practice-based
+artistic process**: the computational findings informed the composition and production
+of an original music album released under my artistic project **Gasch**.
 
 This repository is conceived as a **research system**, prioritizing methodological
 clarity, inspectability, and reproducibility over automation or large-scale processing.
 
 ---
 
+## Thesis and artistic outcome
+
+- 📄 **Undergraduate thesis (TESIUNAM repository):**  
+  https://ru.dgb.unam.mx/items/1fdea9ae-5813-4caf-b2e7-4161eaeaec6e
+
+- 🎧 **Resulting album (Gasch – _Hyperestesia_):**  
+  https://orcd.co/hyperstesiagasch
+
+The analytical work documented here directly informed the rhythmic design strategies
+used in the album, which explores stylistic “sabor” through the synthesis and
+reinterpretation of rhythmic prototypes derived from the studied genres.
+
+---
+
+## Research motivation and hypothesis
+
+This research originates from an **artistic motivation**: as a musician, I sought to
+compose music inspired by Latin popular genres **without relying on extensive prior
+stylistic or idiomatic knowledge**, instead grounding compositional decisions in
+measured rhythmic behavior.
+
+The central hypothesis of the investigation is:
+
+> The “sabor” of the musical genres reggaetón, salsa, cumbia, joesón, bossa nova, and
+> Brazilian funk can be synthesized into **isoperiodic rhythmic pattern prototypes**
+> encoding genre-specific characteristics in **accentuation, articulation, and
+> microtiming of sixteenth notes**, within a tempo range (BPM) derived from the studied
+> corpus.
+
+Within this framework, microrhythm is understood not as expressive deviation or error,
+but as a **structural carrier of stylistic information** that can be analyzed,
+formalized, and re-applied in creative contexts.
+
+---
+
 ## Research focus
 
-Microrhythm is treated here not as performance imprecision, but as a **structural and
-expressive component of groove**, closely linked to style, embodied musical knowledge,
-and long-term performance practice.
+The project addresses the following research questions:
 
-The central research questions addressed by this project are:
-
-- How are microrhythmic timing deviations distributed within the beat across different
+- How are microrhythmic timing deviations distributed at the subdivision level within
   Latin popular music genres?
-- Do these deviations exhibit **systematic, genre-specific patterns** rather than
-  random variability?
-- Can symbolic microrhythmic measurements reveal stylistic proximity or distance
-  between genres that share historical or cultural roots?
+- Do these deviations form **stable, genre-specific profiles** across multiple musical
+  excerpts?
+- Can symbolic microrhythmic measurements support the construction of **rhythmic
+  prototypes** suitable for musical synthesis and composition?
 
 The study adopts a **comparative, subdivision-level perspective**, focusing on short
 rhythmic fragments in order to preserve perceptual grounding while enabling precise
@@ -72,8 +107,8 @@ The analysis pipeline implemented in this repository follows these steps:
 6. **Normalization of timing deviations** relative to the nominal beat duration.
 7. **Statistical analysis and visualization** at the subdivision level.
 
-Symbolic representations are used deliberately to allow for precise timing analysis
-and explicit control over rhythmic structure, at the cost of excluding timbral and
+Symbolic representations are used deliberately to allow for precise timing analysis and
+explicit control over rhythmic structure, at the cost of excluding timbral and
 micro-dynamic dimensions.
 
 ---
@@ -105,19 +140,21 @@ Cross-genre comparison of average subdivision durations suggests the emergence o
 - **Salsa and Joesón** exhibit the closest microrhythmic similarity, consistent with
   their shared derivation from son-based rhythmic organization.
 - **Cumbia** appears closer to Salsa/Joesón than to Brazilian genres, plausibly
-  reflecting Caribbean rhythmic influence and a shared treatment of off-beat timing.
+  reflecting Caribbean rhythmic influence and shared approaches to off-beat timing.
 - **Bossa Nova and Brazilian Funk** form a more distant group relative to the above,
   showing tendencies associated with samba-derived practices and, in the case of funk,
   subdivision alternation.
 
 These results support the hypothesis that microrhythmic duration patterns can reflect
-tacit stylistic consensus across genres, even when not codified as explicit rules.
+tacit stylistic consensus across genres and can be formalized into rhythmic prototypes
+usable in musical creation.
 
 ---
 
 ## Repository structure
 
 ```
+microrhythm-analysis/
 ├── src/ # Analysis scripts
 ├── data/ # MIDI corpus and aggregated measurement data
 ├── figures/ # Curated figures generated from the analysis
@@ -138,55 +175,29 @@ tacit stylistic consensus across genres, even when not codified as explicit rule
 - `excel_analysis_std.py`  
   Statistical analysis of microrhythmic duration data exported to Excel. Computes mean
   values and frequency-weighted standard deviation, and generates scatter plots to
-  visualize duration distributions at the subdivision level. The number of
-  subdivisions per beat (3 or 4) is specified explicitly by the user.
+  visualize duration distributions at the subdivision level.
 
 - `excel_analysis.py`  
-  Visualization of microrhythmic timing for individual musical excerpts. Plots the
-  duration of each subdivision across the 16 analyzed beats of a single song, based on
-  data extracted from the aggregated Excel dataset.
+  Visualization of microrhythmic timing for individual musical excerpts across 16
+  analyzed beats of a single song.
 
 - `excel_genre_comparison.py`  
   Cross-genre comparison of average sixteenth-note (four-subdivision) durations.
   Generates a three-dimensional visualization used in the thesis conclusion to compare
-  microrhythmic profiles across genres. Includes a configuration section allowing the
-  user to select and order 2–5 genres. Brazilian funk excerpts with incomplete
-  subdivision data are automatically excluded.
+  microrhythmic profiles across genres.
 
 ---
 
-## Data (`data/`)
+## Artistic application
 
-- `Mediciones_Microrritmos.xlsx`  
-  Master dataset containing all microrhythmic measurements extracted from the MIDI
-  corpus. Each row corresponds to a measured rhythmic event within a 16-beat excerpt.
+The analytical results obtained through this project were used as **compositional
+constraints and design guides** in the creation of an original album. Rather than
+reproducing existing genres, the album explores **stylized rhythmic prototypes**
+derived from microrhythmic measurements, translating analytical findings back into
+musical practice.
 
-- `corpus.md`  
-  List of analyzed musical excerpts, organized by genre.
-
-- `midi/`  
-  Manually encoded MIDI files, organized by genre. Each file represents a perceptually
-  grounded rhythmic reduction of a recorded performance.
-
----
-
-## Figures (`figures/`)
-
-This directory contains **curated figures** generated from the analysis scripts.
-These figures correspond to results discussed in the written thesis and are intended
-for inspection rather than bulk regeneration.
-
----
-
-## Technologies
-
-- Python  
-- MIDI parsing libraries  
-- NumPy  
-- Pandas  
-- Matplotlib  
-
-All dependencies are listed in `requirements.txt`.
+This bidirectional flow between **analysis and creation** situates the project within
+a practice-based research paradigm, where computational tools support artistic inquiry.
 
 ---
 
@@ -196,8 +207,7 @@ All dependencies are listed in `requirements.txt`.
   features are outside its scope.
 - The corpus is **small and curated by design**, prioritizing perceptual validity over
   statistical generalization.
-- Higher-level metric ambiguity and expressive timing at larger temporal scales are
-  not modeled.
+- Higher-level metric ambiguity and long-range expressive timing are not modeled.
 
 ---
 
@@ -206,4 +216,4 @@ All dependencies are listed in `requirements.txt`.
 This repository represents the **final research state** of the computational analysis
 conducted for the undergraduate thesis. It is not intended as a continuously evolving
 software project, but as a documented, inspectable research artifact suitable for
-academic evaluation.
+academic and artistic evaluation.
