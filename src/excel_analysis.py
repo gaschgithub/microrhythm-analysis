@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # ---------- CONFIGURACIÓN ----------
 FILE_PATH = ""  # Ruta a Mediciones_Microrritmos.xlsx
 GENERO = 1      # Cumbia=1, Salsa=2, Joesón=3, Bossa=4, Funk=5
-CANCION = 1     # Índice de canción dentro del género (1-based)
+CANCION = 1     # Índice de canción dentro del género (1-25)
 
 # Subdivisiones por beat:
 # 4 para todos los géneros
