@@ -207,10 +207,10 @@ please cite the undergraduate thesis:
 
 ```bibtex
 @thesis{GallegosMicrorhythms2024,
-  author  = {Gallegos, Pablo},
+  author  = {Gallegos Noreña, Pablo},
   title   = {Microrhythms in Latin Popular Music: Quantification and Synthesis of Latin Sabor},
   school  = {Universidad Nacional Autónoma de México (UNAM)},
-  year    = {2024},
+  year    = {2025},
   url     = {https://ru.dgb.unam.mx/items/1fdea9ae-5813-4caf-b2e7-4161eaeaec6e}
 }
 ```
