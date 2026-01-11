@@ -132,8 +132,7 @@ Cross-genre comparison of average subdivision durations suggests the emergence o
 
 - **Salsa and Joesón** exhibit the closest microrhythmic similarity, consistent with
   their shared derivation from son-based rhythms.
-- **Cumbia** appears closer to Salsa/Joesón than to Brazilian genres, plausibly
-  reflecting Caribbean rhythmic influence and shared approaches to off-beat timing.
+- **Cumbia** appears closer to Salsa/Joesón than to Brazilian genres, reflecting Caribbean rhythmic influence and shared approaches to off-beat timing.
 - **Bossa Nova and Brazilian Funk** form a more distant group relative to the above,
   showing tendencies associated with samba-derived practices and, in the case of funk,
   subdivision alternation.
