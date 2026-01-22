@@ -32,7 +32,7 @@ used in the album, which explores stylistic “sabor” through the synthesis of
 
 ---
 
-## Motivation and Hypothesis
+## Motivation and hypothesis
 
 As a musician, I sought to compose music inspired by Latin popular genres **without relying on extensive prior knowledge**, instead grounding compositional decisions in
 measured rhythmic behavior.
