@@ -28,7 +28,7 @@ clarity and reproducibility over automation or large-scale processing.
   https://orcd.co/hyperstesiagasch
 
 The analytical work documented here informed the rhythmic design strategies
-used in the album, which explores stylistic “sabor” through the synthesis of rhythmic prototypes from the studied genres. This flow between **analysis and creation** situates the project within a practice-based research paradigm, where computational tools support artistic inquiry.
+used in the album, which explores “sabor” through the synthesis of rhythmic prototypes from the studied genres. This flow between **analysis and creation** situates the project within a practice-based research paradigm, where computational tools support artistic inquiry.
 
 ---
 
